@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRC.Movement — Entrenamiento Personal</title>
+    <meta name="description" content="TRC.Movement — entrenamiento personal basado en el movimiento: fuerza, cardio, movilidad y resistencia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <nav class="nav" data-nav>
+      <a href="#hero" class="nav__logo">TRC<span>.</span>MOVEMENT</a>
+      <a href="#cta" class="nav__cta">Probar clase</a>
+    </nav>
+
+    <main id="app">
+      <section id="hero" class="section hero">
+        <p class="hero__eyebrow" data-reveal>ENTRENAMIENTO PERSONAL</p>
+        <h1 class="hero__title" data-hero-title>
+          <span class="line">EL MOVIMIENTO</span>
+          <span class="line">ES LA MEDICINA</span>
+        </h1>
+        <p class="hero__sub" data-reveal>Fuerza. Cardio. Movilidad. Resistencia.</p>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section id="manifesto" class="section manifesto">
+        <p class="manifesto__text" data-split-lines>
+          El cuerpo humano fue diseñado para moverse. No para sentarse ocho horas. No para quedarse quieto.
+        </p>
+        <p class="manifesto__text" data-split-lines>
+          Fuerza, cardio, movilidad y resistencia no son categorías de gimnasio. Son estados del mismo movimiento.
+        </p>
+        <p class="manifesto__text manifesto__text--accent" data-split-lines>
+          En TRC.Movement no entrenamos partes. Entrenamos tu capacidad de moverte, siempre.
+        </p>
+      </section>
+
+      <section id="disciplines" class="section disciplines" data-disciplines>
+        <div class="disciplines__pin" data-disciplines-pin>
+          <article class="chapter" data-chapter data-index="01">
+            <span class="chapter__index">01</span>
+            <h2 class="chapter__title">FUERZA</h2>
+            <p class="chapter__text">Movimiento contra resistencia. Construir es levantar.</p>
+          </article>
+          <article class="chapter" data-chapter data-index="02">
+            <span class="chapter__index">02</span>
+            <h2 class="chapter__title">CARDIO</h2>
+            <p class="chapter__text">Movimiento sostenido. Resistir es repetir.</p>
+          </article>
+          <article class="chapter" data-chapter data-index="03">
+            <span class="chapter__index">03</span>
+            <h2 class="chapter__title">MOVILIDAD</h2>
+            <p class="chapter__text">Movimiento sin límite. Fluir es libertad.</p>
+          </article>
+          <article class="chapter" data-chapter data-index="04">
+            <span class="chapter__index">04</span>
+            <h2 class="chapter__title">RESISTENCIA</h2>
+            <p class="chapter__text">Movimiento en el tiempo. Aguantar es ganar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method" class="section method">
+        <h2 class="section__title" data-reveal>Nuestro método</h2>
+        <p class="method__intro" data-reveal>
+          Entrenamiento 100% personalizado. Evaluamos tu movimiento, no tu peso. Diseñamos un plan que evoluciona contigo, sesión a sesión.
+        </p>
+        <ol class="method__steps">
+          <li class="method__step" data-reveal><span>01</span>Evaluación de movimiento</li>
+          <li class="method__step" data-reveal><span>02</span>Plan personalizado</li>
+          <li class="method__step" data-reveal><span>03</span>Seguimiento constante</li>
+          <li class="method__step" data-reveal><span>04</span>Evolución continua</li>
+        </ol>
+      </section>
+
+      <section id="coach" class="section coach">
+        <div class="coach__media" data-reveal></div>
+        <div class="coach__content">
+          <p class="coach__eyebrow" data-reveal>TU ENTRENADOR</p>
+          <h2 class="section__title" data-reveal>Nombre del coach</h2>
+          <p class="coach__bio" data-reveal>
+            Bio del entrenador: certificaciones, años de experiencia y filosofía de entrenamiento. Sustituir por contenido real.
+          </p>
+        </div>
+      </section>
+
+      <section id="results" class="section results">
+        <div class="results__stats">
+          <div class="stat" data-reveal><span class="stat__number" data-count="500">0</span><span class="stat__label">personas entrenadas</span></div>
+          <div class="stat" data-reveal><span class="stat__number" data-count="8">0</span><span class="stat__label">años de experiencia</span></div>
+          <div class="stat" data-reveal><span class="stat__number" data-count="98">0</span><span class="stat__label">% adherencia al plan</span></div>
+        </div>
+        <blockquote class="testimonial" data-reveal>
+          “Cita de un cliente real sobre su transformación con TRC.Movement.” <cite>— Nombre, apellido</cite>
+        </blockquote>
+      </section>
+
+      <section id="space" class="section space">
+        <h2 class="section__title" data-reveal>El espacio</h2>
+        <div class="space__grid">
+          <div class="space__img" data-reveal></div>
+          <div class="space__img" data-reveal></div>
+          <div class="space__img" data-reveal></div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <h2 class="cta__title" data-reveal>TU PRIMER MOVIMIENTO<br />EMPIEZA AQUÍ</h2>
+        <form class="cta__form" data-reveal>
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="email" name="email" placeholder="Email o teléfono" required />
+          <textarea name="mensaje" placeholder="¿Qué quieres entrenar?" rows="3"></textarea>
+          <button type="submit">Quiero probar una clase</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p>TRC.Movement</p>
+        <p>Dirección, ciudad — Lun a Sáb, 7:00–21:00</p>
+        <p class="footer__socials"><a href="#">Instagram</a><a href="#">WhatsApp</a></p>
+        <p class="footer__legal">&copy; <span data-year></span> TRC.Movement</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
