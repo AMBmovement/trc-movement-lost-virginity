@@ -1,9 +1,9 @@
 :root {
-  --bg: #f5f1ea;
+  --bg: #3e2d28;
   --text: #171310;
   --text-dim: #8a8071;
-  --accent: #4d4132;
-  --accent-text: #f5f1ea;
+  --accent: #f5f1ea;
+  --accent-text: #171310;
   --border: rgba(23, 19, 16, 0.14);
   --surface: #eae2d3;
 
@@ -61,7 +61,7 @@ body {
   font-weight: 800;
   font-size: 88vw;
   line-height: 1;
-  color: #fbf9f5;
+  color: #4a3832;
   pointer-events: none;
   user-select: none;
   z-index: 0;
@@ -136,6 +136,15 @@ body {
   text-transform: uppercase;
   margin: 0 0 24px;
   line-height: 1.05;
+}
+
+.hero__title,
+.chapter__title,
+.section__title,
+.method__step,
+.testimonial {
+  -webkit-text-stroke: 1px #f5f1ea;
+  paint-order: stroke fill;
 }
 
 /* HERO */
