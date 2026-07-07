@@ -300,7 +300,9 @@ body {
 
 .coach__media {
   aspect-ratio: 4 / 5;
-  background: linear-gradient(155deg, var(--surface), #d9cbb2);
+  width: 100%;
+  object-fit: cover;
+  background: var(--surface);
   border-radius: 4px;
 }
 
@@ -380,7 +382,9 @@ body {
 
 .space__img {
   aspect-ratio: 3 / 4;
-  background: linear-gradient(155deg, var(--surface), #d9cbb2);
+  width: 100%;
+  object-fit: cover;
+  background: var(--surface);
   border-radius: 4px;
 }
 

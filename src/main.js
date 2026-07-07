@@ -87,7 +87,7 @@ ScrollTrigger.create({
   },
 })
 
-gsap.utils.toArray('.stat__number').forEach((el) => {
+gsap.utils.toArray('.stat__count').forEach((el) => {
   const target = Number(el.dataset.count)
   const counter = { val: 0 }
 
@@ -106,6 +106,23 @@ gsap.utils.toArray('.stat__number').forEach((el) => {
       })
     },
   })
+})
+
+const ctaForm = document.querySelector('.cta__form')
+ctaForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const phone = ctaForm.dataset.whatsapp
+  const nombre = ctaForm.nombre.value.trim()
+  const contacto = ctaForm.contacto.value.trim()
+  const mensaje = ctaForm.mensaje.value.trim()
+
+  const texto = [
+    `Hola, soy ${nombre}.`,
+    `Contacto: ${contacto}.`,
+    mensaje ? `Quiero entrenar: ${mensaje}` : 'Quiero probar una clase.',
+  ].join(' ')
+
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(texto)}`, '_blank')
 })
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear()
