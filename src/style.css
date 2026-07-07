@@ -57,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--display);
+  font-family: 'Fjalla One', sans-serif;
   font-size: 55vw;
   line-height: 1;
   color: #fbf9f5;
