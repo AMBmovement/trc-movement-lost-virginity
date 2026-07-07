@@ -51,6 +51,27 @@ body {
   will-change: transform;
 }
 
+.bg-mark {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 55vw;
+  line-height: 1;
+  color: #fbf9f5;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+}
+
 .nav {
   position: fixed;
   top: 0;
