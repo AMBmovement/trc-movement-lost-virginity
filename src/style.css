@@ -502,6 +502,27 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.footer__map {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 8px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.footer__map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.footer__map:hover img {
+  opacity: 0.85;
+}
+
 .footer__socials {
   display: flex;
   gap: 16px;
