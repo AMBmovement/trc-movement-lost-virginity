@@ -456,18 +456,18 @@ body {
 .cta__form textarea {
   width: 100%;
   padding: 16px 20px;
-  border: 1px solid rgba(245, 241, 234, 0.35);
+  border: 1px solid rgba(23, 19, 16, 0.15);
   border-radius: 4px;
-  background: rgba(245, 241, 234, 0.1);
+  background: #ffffff;
   font-family: var(--sans);
   font-size: 16px;
-  color: var(--accent-text);
+  color: var(--text);
   resize: none;
 }
 
 .cta__form input::placeholder,
 .cta__form textarea::placeholder {
-  color: rgba(245, 241, 234, 0.55);
+  color: #4d4132;
 }
 
 .cta__form button {
