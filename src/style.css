@@ -484,6 +484,8 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: opacity 0.3s;
+  -webkit-text-stroke: 1px #f5f1ea;
+  paint-order: stroke fill;
 }
 
 .cta__form button:hover {
