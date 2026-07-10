@@ -15,11 +15,6 @@ window.addEventListener('mousemove', (e) => {
   gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0.15, ease: 'power2.out' })
 })
 
-const nav = document.querySelector('[data-nav]')
-lenis.on('scroll', ({ scroll }) => {
-  nav.classList.toggle('is-visible', scroll > window.innerHeight * 0.6)
-})
-
 const heroLines = document.querySelectorAll('.hero__title .line')
 gsap.set(heroLines, { yPercent: 110 })
 gsap
