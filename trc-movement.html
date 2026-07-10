@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horarios — trc.movement</title>
-    <meta name="description" content="Horarios de clases de trc.movement, entrenamiento personal en grupos reducidos." />
+    <title>trc.movement</title>
+    <meta name="description" content="La historia de trc.movement." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Syne:wght@800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -26,36 +26,33 @@
 
     <main id="app">
       <section class="section page-hero">
-        <p class="page-hero__eyebrow" data-reveal>HORARIOS</p>
-        <h1 class="page-hero__title" data-reveal>Horarios</h1>
+        <p class="page-hero__eyebrow" data-reveal>NUESTRA HISTORIA</p>
+        <h1 class="page-hero__title" data-reveal>trc.movement</h1>
         <p class="page-hero__intro" data-reveal>
-          Entrenamos en grupos reducidos con horarios flexibles. Este horario es orientativo — escríbenos por WhatsApp para confirmar disponibilidad y reservar tu sesión.
+          [Texto de ejemplo — lo sustituimos por el definitivo más adelante] trc.movement nació de una idea simple: el movimiento no es un castigo, es una herramienta. Aquí contaremos quiénes somos, por qué empezamos esto y qué nos hace diferentes de cualquier otro gimnasio.
         </p>
       </section>
 
-      <section class="section schedule">
-        <ul class="schedule__list">
-          <li class="schedule__item" data-reveal>
-            <span class="schedule__day">Lunes a viernes</span>
-            <span class="schedule__hours">07:00 – 10:00 y 17:00 – 21:00</span>
-          </li>
-          <li class="schedule__item" data-reveal>
-            <span class="schedule__day">Sábados</span>
-            <span class="schedule__hours">09:00 – 13:00</span>
-          </li>
-          <li class="schedule__item" data-reveal>
-            <span class="schedule__day">Domingos</span>
-            <span class="schedule__hours">Cerrado</span>
-          </li>
-        </ul>
-        <p class="schedule__note" data-reveal>
-          * Horario orientativo, sujeto a disponibilidad de grupos. Te confirmamos tu franja exacta por WhatsApp.
+      <section class="section manifesto">
+        <p class="manifesto__text" data-reveal>
+          [Placeholder] Todo empezó con una pregunta sencilla: ¿por qué el entrenamiento tiene que doler para funcionar? De ahí salió trc.movement.
+        </p>
+        <p class="manifesto__text" data-reveal>
+          [Placeholder] No somos un gimnasio más. Somos un grupo reducido de personas que se mueven juntas, guiadas por alguien que las conoce de verdad.
+        </p>
+        <p class="manifesto__text manifesto__text--accent" data-reveal>
+          [Placeholder] Esta es nuestra historia — la iremos completando contigo.
         </p>
       </section>
 
-      <section class="section cta">
+      <section id="cta" class="section cta">
         <h2 class="cta__title" data-reveal>TU PRIMER MOVIMIENTO<br />EMPIEZA AQUÍ</h2>
-        <a class="page-cta__button" href="/#cta">Quiero probar una clase</a>
+        <form class="cta__form" data-reveal data-whatsapp="34675032400">
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="tel" name="contacto" placeholder="Teléfono" required />
+          <textarea name="mensaje" rows="3">Quiero empezar a entrenar en trc.movement porque </textarea>
+          <button type="submit">Quiero probar una clase</button>
+        </form>
       </section>
 
       <footer class="footer">
