@@ -107,6 +107,7 @@ body {
 }
 
 .nav__cta {
+  background: #ffffff;
   color: var(--text);
   text-decoration: none;
   font-size: 14px;
@@ -140,9 +141,7 @@ body {
 
 .hero__title,
 .chapter__title,
-.section__title,
-.method__step,
-.testimonial {
+.section__title {
   -webkit-text-stroke: 1px #f5f1ea;
   paint-order: stroke fill;
 }
@@ -311,6 +310,7 @@ body {
   flex-direction: column;
   gap: 12px;
   font-size: 18px;
+  color: #f5f1ea;
 }
 
 .method__step span {
@@ -369,6 +369,17 @@ body {
   margin-bottom: 56px;
 }
 
+.results__title {
+  font-family: var(--display);
+  font-size: clamp(22px, 3vw, 32px);
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  line-height: 1.15;
+  max-width: 700px;
+  -webkit-text-stroke: 1px #f5f1ea;
+  paint-order: stroke fill;
+}
+
 .stat {
   display: flex;
   flex-direction: column;
@@ -393,6 +404,7 @@ body {
   max-width: 800px;
   margin: 0;
   line-height: 1.4;
+  color: #f5f1ea;
 }
 
 .testimonial cite {
