@@ -671,6 +671,14 @@ body {
   max-width: 640px;
 }
 
+.page-hero__lead {
+  font-family: var(--display);
+  font-size: clamp(24px, 3.4vw, 40px);
+  line-height: 1.25;
+  color: #f5f1ea;
+  max-width: 760px;
+}
+
 .page-cta__button {
   display: inline-block;
   margin-top: 8px;
