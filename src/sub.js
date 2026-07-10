@@ -25,25 +25,6 @@ gsap.utils.toArray('[data-reveal]').forEach((el) => {
   })
 })
 
-const ctaForm = document.querySelector('.cta__form')
-if (ctaForm) {
-  ctaForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const phone = ctaForm.dataset.whatsapp
-    const nombre = ctaForm.nombre.value.trim()
-    const contacto = ctaForm.contacto.value.trim()
-    const mensaje = ctaForm.mensaje.value.trim()
-
-    const texto = [
-      `Hola, soy ${nombre}.`,
-      `Contacto: ${contacto}.`,
-      mensaje ? `Quiero entrenar: ${mensaje}` : 'Quiero probar una clase.',
-    ].join(' ')
-
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(texto)}`, '_blank')
-  })
-}
-
 const yearEl = document.querySelector('[data-year]')
 if (yearEl) yearEl.textContent = new Date().getFullYear()
 

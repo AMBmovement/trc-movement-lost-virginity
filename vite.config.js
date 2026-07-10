@@ -8,7 +8,6 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        trcMovement: resolve(__dirname, 'trc-movement.html'),
         queEs: resolve(__dirname, 'que-es.html'),
         horarios: resolve(__dirname, 'horarios.html'),
         servicios: resolve(__dirname, 'servicios.html'),
