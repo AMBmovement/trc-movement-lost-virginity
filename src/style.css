@@ -111,18 +111,27 @@ body {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .nav__links a {
+  background: #ffffff;
   color: var(--text);
   text-decoration: none;
   font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  border-radius: 999px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .nav__links a:hover {
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
 }
 
 @media (max-width: 800px) {
@@ -130,12 +139,13 @@ body {
     order: 3;
     width: 100%;
     justify-content: center;
-    gap: 18px;
+    gap: 10px;
     font-size: 12px;
   }
 
   .nav__links a {
     font-size: 12px;
+    padding: 8px 14px;
   }
 }
 
