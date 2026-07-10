@@ -106,6 +106,29 @@ body {
   color: var(--accent);
 }
 
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.nav__links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav__links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .nav__links {
+    display: none;
+  }
+}
+
 .nav__cta {
   background: #ffffff;
   color: var(--text);
@@ -612,4 +635,127 @@ body {
 .footer__legal {
   margin-top: 16px;
   font-size: 12px;
+}
+
+/* SUBPAGES */
+
+.page-hero {
+  padding-top: 160px;
+  max-width: 800px;
+}
+
+.page-hero__eyebrow {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 0 0 24px;
+}
+
+.page-hero__title {
+  font-family: var(--display);
+  font-size: clamp(40px, 7vw, 88px);
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin: 0 0 24px;
+  -webkit-text-stroke: 1px #f5f1ea;
+  paint-order: stroke fill;
+}
+
+.page-hero__intro {
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--text-dim);
+  max-width: 640px;
+}
+
+.page-cta__button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: #e2361f;
+  color: #f5f1ea;
+  font-family: var(--sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.page-cta__button:hover {
+  opacity: 0.85;
+}
+
+/* SCHEDULE (horarios.html) */
+
+.schedule__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+  max-width: 640px;
+}
+
+.schedule__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 18px;
+}
+
+.schedule__day {
+  font-weight: 700;
+  color: #f5f1ea;
+}
+
+.schedule__hours {
+  color: var(--text-dim);
+}
+
+.schedule__note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-dim);
+  max-width: 600px;
+}
+
+/* SERVICES (servicios.html) */
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.service__index {
+  display: block;
+  font-family: var(--display);
+  font-size: 18px;
+  color: var(--accent);
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+
+.service .section__title {
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.service__text {
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+@media (max-width: 800px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
 }

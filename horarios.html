@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horarios — trc.movement</title>
+    <meta name="description" content="Horarios de clases de trc.movement, entrenamiento personal en grupos reducidos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Syne:wght@800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="bg-mark" aria-hidden="true">13</div>
+
+    <nav class="nav is-visible" data-nav>
+      <a href="/" class="nav__logo">trc<span>.</span>movement</a>
+      <div class="nav__links">
+        <a href="/que-es.html">¿Qué es trc.movement?</a>
+        <a href="/horarios.html">Horarios</a>
+        <a href="/servicios.html">Servicios</a>
+      </div>
+      <a href="/#cta" class="nav__cta">Probar clase</a>
+    </nav>
+
+    <main id="app">
+      <section class="section page-hero">
+        <p class="page-hero__eyebrow" data-reveal>HORARIOS</p>
+        <h1 class="page-hero__title" data-reveal>Horarios</h1>
+        <p class="page-hero__intro" data-reveal>
+          Entrenamos en grupos reducidos con horarios flexibles. Este horario es orientativo — escríbenos por WhatsApp para confirmar disponibilidad y reservar tu sesión.
+        </p>
+      </section>
+
+      <section class="section schedule">
+        <ul class="schedule__list">
+          <li class="schedule__item" data-reveal>
+            <span class="schedule__day">Lunes a viernes</span>
+            <span class="schedule__hours">07:00 – 10:00 y 17:00 – 21:00</span>
+          </li>
+          <li class="schedule__item" data-reveal>
+            <span class="schedule__day">Sábados</span>
+            <span class="schedule__hours">09:00 – 13:00</span>
+          </li>
+          <li class="schedule__item" data-reveal>
+            <span class="schedule__day">Domingos</span>
+            <span class="schedule__hours">Cerrado</span>
+          </li>
+        </ul>
+        <p class="schedule__note" data-reveal>
+          * Horario orientativo, sujeto a disponibilidad de grupos. Te confirmamos tu franja exacta por WhatsApp.
+        </p>
+      </section>
+
+      <section class="section cta">
+        <h2 class="cta__title" data-reveal>TU PRIMER MOVIMIENTO<br />EMPIEZA AQUÍ</h2>
+        <a class="page-cta__button" href="/#cta">Quiero probar una clase</a>
+      </section>
+
+      <footer class="footer">
+        <p>trc.movement</p>
+        <p>Calle Castilla 3, nave 52 — escríbenos por WhatsApp para conocer el horario</p>
+        <a class="footer__map" href="https://www.google.com/maps/search/?api=1&query=Calle+Castilla+3,+Mejorada+del+Campo" target="_blank" rel="noopener">
+          <img src="/images/map.jpg" alt="Mapa de ubicación de trc.movement en Calle Castilla 3, Mejorada del Campo" loading="lazy" />
+        </a>
+        <p class="footer__socials"><a href="https://instagram.com/_alexmorillo" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/34675032400" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p class="footer__legal">&copy; <span data-year></span> trc.movement</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/sub.js"></script>
+  </body>
+</html>
