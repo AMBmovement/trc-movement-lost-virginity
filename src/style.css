@@ -704,8 +704,7 @@ body {
 .schedule {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
 }
 
 .schedule__list {
@@ -747,7 +746,6 @@ body {
   font-size: 14px;
   color: var(--text-dim);
   max-width: 480px;
-  text-align: center;
 }
 
 /* SERVICES (servicios.html) */
