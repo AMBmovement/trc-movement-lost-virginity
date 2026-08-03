@@ -425,20 +425,32 @@ body {
   letter-spacing: 1px;
 }
 
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
 .testimonial {
-  font-size: clamp(20px, 2.6vw, 30px);
-  max-width: 800px;
+  font-size: clamp(16px, 1.6vw, 19px);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #f5f1ea;
 }
 
 .testimonial cite {
   display: block;
-  margin-top: 20px;
+  margin-top: 16px;
   font-style: normal;
   color: var(--text-dim);
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 /* SPACE */
