@@ -166,7 +166,6 @@ body {
 }
 
 .hero__title,
-.chapter__title,
 .section__title {
   -webkit-text-stroke: 1px #f5f1ea;
   paint-order: stroke fill;
@@ -288,12 +287,30 @@ body {
   padding: 0 5vw;
 }
 
-.chapter--fuerza {
+.chapter--fuerza,
+.chapter--cardio,
+.chapter--movilidad,
+.chapter--comunidad {
   background-color: #2e211d;
-  background-image: linear-gradient(180deg, rgba(46, 33, 29, 0.45), rgba(46, 33, 29, 0.65)), url('/images/fuerza-bg.jpg');
   background-size: cover, 100% 114%;
   background-position: center, center 70px;
   background-repeat: no-repeat, no-repeat;
+}
+
+.chapter--fuerza {
+  background-image: linear-gradient(180deg, rgba(46, 33, 29, 0.45), rgba(46, 33, 29, 0.65)), url('/images/fuerza-bg.jpg');
+}
+
+.chapter--cardio {
+  background-image: linear-gradient(180deg, rgba(46, 33, 29, 0.45), rgba(46, 33, 29, 0.65)), url('/images/cardio-bg.jpg');
+}
+
+.chapter--movilidad {
+  background-image: linear-gradient(180deg, rgba(46, 33, 29, 0.45), rgba(46, 33, 29, 0.65)), url('/images/movilidad-bg.jpg');
+}
+
+.chapter--comunidad {
+  background-image: linear-gradient(180deg, rgba(46, 33, 29, 0.45), rgba(46, 33, 29, 0.65)), url('/images/comunidad-bg.jpg');
 }
 
 .chapter__index {
@@ -310,6 +327,9 @@ body {
   line-height: 0.9;
   text-transform: uppercase;
   margin: 0;
+  color: #f3ece2;
+  -webkit-text-stroke: 2px #000000;
+  paint-order: stroke fill;
 }
 
 .chapter__text {
