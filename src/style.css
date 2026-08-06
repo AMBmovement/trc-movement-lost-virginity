@@ -184,7 +184,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  filter: sepia(0.5) saturate(1.5) hue-rotate(-8deg) brightness(0.5) contrast(1.15);
+  filter: sepia(0.5) saturate(1.5) hue-rotate(-8deg) brightness(0.4) contrast(1.25) blur(3px);
   z-index: 0;
 }
 
