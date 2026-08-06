@@ -77,10 +77,27 @@ if (manifestoVideo) {
     })
   }
 
+  // iOS Safari won't paint any video frame until playback has actually started once,
+  // even if we only ever seek via currentTime. Prime it with a muted play/pause.
+  const primeVideo = () => {
+    const playAttempt = manifestoVideo.play()
+    if (playAttempt && typeof playAttempt.then === 'function') {
+      playAttempt.then(() => manifestoVideo.pause()).catch(() => {})
+    }
+  }
+
   if (manifestoVideo.readyState >= 1) {
+    primeVideo()
     initVideoScrub()
   } else {
-    manifestoVideo.addEventListener('loadedmetadata', initVideoScrub, { once: true })
+    manifestoVideo.addEventListener(
+      'loadedmetadata',
+      () => {
+        primeVideo()
+        initVideoScrub()
+      },
+      { once: true }
+    )
   }
 }
 
