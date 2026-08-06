@@ -46,6 +46,44 @@ gsap.utils.toArray('[data-split-lines]').forEach((el) => {
   )
 })
 
+const manifestoVideo = document.querySelector('.manifesto__video')
+if (manifestoVideo) {
+  const manifestoSection = document.querySelector('#manifesto')
+  let targetTime = 0
+  let seeking = false
+
+  const applySeek = () => {
+    seeking = false
+    if (Math.abs(manifestoVideo.currentTime - targetTime) > 0.03) {
+      manifestoVideo.currentTime = targetTime
+    }
+  }
+
+  const initVideoScrub = () => {
+    ScrollTrigger.create({
+      trigger: manifestoSection,
+      start: 'top bottom',
+      end: 'bottom top',
+      scrub: true,
+      onUpdate(self) {
+        const duration = manifestoVideo.duration
+        if (!duration) return
+        targetTime = self.progress * duration
+        if (!seeking) {
+          seeking = true
+          requestAnimationFrame(applySeek)
+        }
+      },
+    })
+  }
+
+  if (manifestoVideo.readyState >= 1) {
+    initVideoScrub()
+  } else {
+    manifestoVideo.addEventListener('loadedmetadata', initVideoScrub, { once: true })
+  }
+}
+
 const disciplinesSection = document.querySelector('[data-disciplines]')
 const chapters = gsap.utils.toArray('[data-chapter]')
 
