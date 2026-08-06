@@ -46,9 +46,9 @@ gsap.utils.toArray('[data-split-lines]').forEach((el) => {
   )
 })
 
-const manifestoVideo = document.querySelector('.manifesto__video')
+const manifestoVideo = document.querySelector('.intro-video__media')
 if (manifestoVideo) {
-  const manifestoSection = document.querySelector('#manifesto')
+  const introVideoWrap = document.querySelector('[data-intro-video]')
   let targetTime = 0
   let seeking = false
 
@@ -61,8 +61,8 @@ if (manifestoVideo) {
 
   const initVideoScrub = () => {
     ScrollTrigger.create({
-      trigger: manifestoSection,
-      start: 'top bottom',
+      trigger: introVideoWrap,
+      start: 'top top',
       end: 'bottom top',
       scrub: true,
       onUpdate(self) {
