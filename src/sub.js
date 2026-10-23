@@ -40,7 +40,7 @@ if (ctaForm) {
       mensaje ? `Quiero entrenar: ${mensaje}` : 'Quiero probar una clase.',
     ].join(' ')
 
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(texto)}`, '_blank')
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener,noreferrer')
   })
 }
 
