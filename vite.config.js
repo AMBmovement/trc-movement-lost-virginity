@@ -11,6 +11,8 @@ export default {
         queEs: resolve(__dirname, 'que-es.html'),
         horarios: resolve(__dirname, 'horarios.html'),
         servicios: resolve(__dirname, 'servicios.html'),
+        avisoLegal: resolve(__dirname, 'aviso-legal.html'),
+        privacidad: resolve(__dirname, 'privacidad.html'),
       },
     },
   },
